@@ -1,0 +1,23 @@
+[workspace]
+authors = ["Shreyas <847781+seekshreyas@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "Kaggle-Gemma4-Developer-Agent"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+sync-agents = "python scripts/sync_agent_config.py"
+
+[dependencies]
+python = ">=3.14,<3.15"
+jupyterlab = ">=4.6.4,<5"
+scipy = ">=1.18.1,<2"
+numpy = ">=2.5.3,<3"
+pandas = ">=3.0.6,<4"
+duckdb = ">=1.5.6,<2"
+kaggle = ">=2.2.4,<3"
+mcp = ">=2.3.0,<3"
+kagglehub = ">=1.0.2,<2"
+
+[pypi-dependencies]
+marimo = { version = ">=0.25.1, <0.26", extras = ["recommended"] }
